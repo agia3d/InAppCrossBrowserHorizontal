@@ -1,6 +1,5 @@
 package com.dtworkshop.inappcrossbrowser;
 
-import android.app.Activity;//a3d
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
@@ -422,17 +421,6 @@ public class InAppCrossBrowser extends WebViewBrowser {
         lp.width = WindowManager.LayoutParams.MATCH_PARENT;
         lp.height = WindowManager.LayoutParams.MATCH_PARENT;
         
-        Button btnTag = new Button(cordova.getActivity());
-        btnTag.setText("Button");
-        btnTag.setId(6);
-        main.addView(btnTag);
-        
-        if(lp.width>lp.height){
-            main.setOrientation(LinearLayout.HORIZONTAL);
-        }else{
-            main.setOrientation(LinearLayout.VERTICAL);
-        }
-
         dialog.setContentView(main);
         dialog.getWindow().setAttributes(lp);
 
