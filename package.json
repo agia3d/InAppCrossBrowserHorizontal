@@ -1,0 +1,43 @@
+{
+  "version": "0.1.6",
+  "name": "dtworkshop-inappcrossbrowser",
+  "cordova_name": "InAppCrossBrowser",
+  "description": "Cordova android webView and Crosswalk combination",
+  "license": "Apache 2.0",
+  "repo": "https://github.com/agia3d/InAppCrossBrowser.git",
+  "issue": "https://github.com/agia3d/InAppCrossBrowser/issues",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova",
+    "in",
+    "app",
+    "browser",
+    "inappbrowser",
+    "crosswalk"
+  ],
+  "platforms": [
+    "android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.1.0"
+    }
+  ],
+  "cordova": {
+    "id": "fr.agia3d.inappcrossbrowser",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agia3d/InAppCrossBrowser.git"
+  },
+  "author": "agia3d",
+  "bugs": {
+    "url": "https://github.com/agia3d/InAppCrossBrowser/issues"
+  },
+  "homepage": "https://github.com/agia3d/InAppCrossBrowser#readme"
+}
