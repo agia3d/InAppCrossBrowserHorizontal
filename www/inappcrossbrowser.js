@@ -81,7 +81,7 @@ InAppBrowser.prototype = {
 module.exports = function(strUrl, strWindowName, strWindowFeatures, callbacks) {
     // Don't catch calls that write to existing frames (e.g. named iframes).
     if (window.frames && window.frames[strWindowName]) {
-        var origOpenFunc = modulemapper.getOriginalSymbol(window, 'open');
+        var origOpenFunc = modulemapper.getOriginalSymbol(window, 'openHor');
         return origOpenFunc.apply(window, arguments);
     }
 
@@ -99,7 +99,7 @@ module.exports = function(strUrl, strWindowName, strWindowFeatures, callbacks) {
 
     strWindowFeatures = strWindowFeatures || "";
 
-    exec(cb, cb, cmd, "openHor", [strUrl, strWindowName, strWindowFeatures]);
+    exec(cb, cb, cmd, "open", [strUrl, strWindowName, strWindowFeatures]);
     return iab;
 };
 
