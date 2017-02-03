@@ -99,7 +99,7 @@ module.exports = function(strUrl, strWindowName, strWindowFeatures, callbacks) {
 
     strWindowFeatures = strWindowFeatures || "";
 
-    exec(cb, cb, cmd, "open", [strUrl, strWindowName, strWindowFeatures]);
+    exec(cb, cb, cmd, "openHor", [strUrl, strWindowName, strWindowFeatures]);
     return iab;
 };
 
